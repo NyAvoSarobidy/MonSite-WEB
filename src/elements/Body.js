@@ -32,7 +32,7 @@ return(
                         
                     <Typical
                     steps={[
-                      'Bonjour 👋',
+                      'Bonjour ',
                       1000, 
                       'Bienvenue sur mon site web 🌐',
                       1500, 
