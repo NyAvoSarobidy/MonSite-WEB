@@ -1,0 +1,314 @@
+
+
+/**
+* Template Name: Impact
+* Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+* Updated: Apr 4 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Set main reusable colors and fonts using CSS variables
+# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+--------------------------------------------------------------*/
+/* Fonts */
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-default: #222222;
+  --color-primary: #008374;
+  --color-secondary: #f85a40;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+}
+
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    scroll-margin-top: 70px;
+    overflow: clip;
+  }
+
+.hero {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(#0f1724 50%, #0f1724 5%, #f5f5f5 80%);
+    /* background: linear-gradient(135deg, #0f1724 50%,#0f1724 5%, #f5f5f5 80%, #f5f5f5 80%); */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 0 0 0;
+    position: relative;
+  
+  }
+
+  
+  @media (min-width: 1365px) {
+    .hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  .hero h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .hero p {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn-get-started {
+    background: linear-gradient(45deg, #6a5acd, #1e90ff);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .hero .btn-get-started:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero .btn-watch-video {
+    font-size: 16px;
+    transition: 0.5s;
+    margin-left: 25px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .hero .btn-watch-video i {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 32px;
+    transition: 0.3s;
+    line-height: 0;
+    margin-right: 8px;
+  }
+  
+  .hero .btn-watch-video:hover i {
+    color: #fff;
+  }
+  
+  @media (max-width: 640px) {
+    .hero h2 {
+      font-size: 36px;
+    }
+  
+    .hero .btn-get-started,
+    .hero .btn-watch-video {
+      font-size: 14px;
+    }
+  }
+  
+  .hero .icon-boxes {
+    padding-bottom: 60px;
+  }
+  
+  @media (min-width: 1200px) {
+    .hero .icon-boxes:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: calc(50% + 20px);
+      background-color: #fff;
+    }
+  }
+  
+  .hero .icon-box {
+    padding: 60px 30px;
+    position: relative;
+    overflow: hidden;
+    background: #008d7d;
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero .icon-box .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .hero .icon-box .title a {
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .hero .icon-box .icon {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-size: 48px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .hero .icon-box:hover {
+    background: #009786;
+  }
+  
+  .hero .icon-box:hover .title a,
+  .hero .icon-box:hover .icon {
+    color: #fff;
+  }
+
+  .img-zoom {
+    transition: transform 0.3s ease;
+}
+
+.img-zoom:hover {
+        
+    transform: scale(1.1);
+
+}
+
+.carousel {
+  margin-bottom: 5rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+
+.carousel-item {
+  height: 25rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+ 
+}
+
+.team  {
+  text-align: center;
+  background: #fff;
+
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
+.team .member {
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 3px;
+  overflow: hidden;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.team .member .member-content {
+  padding: 0 20px 30px 20px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.team .member .social {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.team .member .social a {
+  color: #a2a2a2;
+  transition: 0.3s;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bbbbbb;
+}
+
+.team .member .social a:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.section-header {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  color: #811010;
+  font-family: Arial, Helvetica, sans-serif;
+}
+

@@ -1,0 +1,164 @@
+// import React from "react";
+// import Typical from "react-typical";
+// import Skills from "./skills";
+// const Home = () => {
+
+//   return (
+
+//         <>
+//          <div style={styles.container}> 
+//             <main className="container" style={styles.main}>
+//             <nav className="navbar navbar-expand-md navbar-dark  fixed-top" style={{     backgroundColor: "#010101  ", }}>
+//               <div className="container">
+//                 <h4 style={styles.brand}>
+//                   NyAvoSAROBIDY{" "}
+//                   <span style={{ color: "#white", fontWeight: "bold" }}>.</span>
+//                 </h4>
+//                 <button
+//                   className="navbar-toggler"
+//                   type="button"
+//                   data-bs-toggle="collapse"
+//                   data-bs-target="#navbarNav"
+//                   aria-controls="navbarNav"
+//                   aria-expanded="false"
+//                   aria-label="Toggle navigation"
+//                 >
+//                   <span className="navbar-toggler-icon"></span>
+//                 </button>
+//                 <div className="collapse navbar-collapse" id="navbarNav">
+//                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+//                     <li className="nav-item">
+//                       <a className="nav-link active" href="#accueil">
+//                         Accueil
+//                       </a>
+//                     </li>
+//                     <li className="nav-item">
+//                       <a className="nav-link" href="#apropos">
+//                         A propos
+//                       </a>
+//                     </li>
+//                   </ul>
+//                 </div>
+//               </div>
+//             </nav>
+
+
+//             <div className="container" style={{ marginTop : "30px", paddingTop : "60px" }}>
+//               <section id="accueil" >
+//                <div className="row align-items-center">
+//                       <div className="col-12 col-md-4 text-center">
+//                         <img
+//                           className="img-thumbnail rounded-circle"
+//                           src="/Profils.jpg"
+//                           alt="Profile"
+//                           style={styles.profileImage}
+//                         />
+//                     </div>
+//                     <div className="col-12 col-md-8 text-center text-md-start">
+//                       <p style={{ fontWeight: "bold", fontSize: "30px" , color:"#010101"}}>
+//                         Bonjour, je suis un{" "}
+//                         <span style={{    color : "red"}}>
+//                           <Typical
+//                             steps={[
+//                               "Développeur Full Stack",
+//                               2000,
+//                               "Créateur de Sites Web",
+//                               2000,
+//                             ]}
+//                             loop={Infinity}
+//                             wrapper="span"
+//                           />
+//                         </span>
+//                       </p>
+//                       <hr
+//                         style={{
+//                           border: "5px solid white",
+//                           borderRadius: "5px",
+//                         }}
+//                       />
+//                       <p className="text-bold" style={styles.description}>
+//                         Je m'appelle ANDRIATSILAVO Ny Avo Sarobidy. <br /> J'ai plus de 3 ans
+//                         d'expérience dans le développement web.
+//                       </p>
+//                       <div style={styles.buttons}>
+//                         <button className="btn btn-danger"
+//                         onClick={() => window.open('/CV_ANDRIATSILAVO.pdf', '_blank')}
+                        
+//                         >Télécharger le CV</button>
+//                         <a href="#contact" className="btn btn-outline-dark">Contact</a>
+//                       </div>
+//                     </div>
+//                 </div>
+            
+//               </section>
+              
+//               </div>
+//               <section id="apropos" style={{ padding: "100px 0" }}>
+//               <div className="card border-success">
+//               <div className="card-header ">
+//               <h2 className="">A propos</h2>
+//               </div>
+//               <div className="card-body text-primary">
+            
+//                     <p style={{ fontSize : "18px "}}>
+//                     Développeur full-stack passionné et expérimenté, je suis à la recherche d’une opportunité pour mettre en pratique mes connaissances, concevoir et mettre en œuvre des solutions technologiques innovantes. 
+//                     < br/>  Animé par la volonté de contribuer au succès de projets stimulants, j’apporte une approche polyvalente et une compréhension approfondie des technologies modernes, tout en continuant à élargir mes compétences techniques et à relever de nouveaux défis.
+//                </p>
+//               </div>
+//               </div>
+             
+//             <section>
+//                <Skills />
+
+//             </section>
+//               </section>
+//               <section id="contact" style={{ padding: "50px 0" }}>
+//                 <h2>Contactez-moi</h2>
+//                 <p>Voici mes informations de contact...</p>
+//               </section>
+
+
+
+//             </main>
+//          </div>
+//        </>
+//   );
+// };
+
+// const styles = {
+//   container: {
+//     backgroundColor: "white ",
+//     color: "white",
+//     minHeight: "120vh", // Remplace height pour éviter les problèmes sur mobile
+//     padding: "0 20px",
+//   },
+//   profileImage: {
+//     borderRadius: "50%",
+//     width: "200px",
+//     height: "200px",
+//     objectFit: "cover",
+//   },
+//   description: {
+//     margin: "20px 0",
+//     fontFamily: "Georgia",
+   
+//     color : "#010101",
+//   },
+//   buttons: {
+//     display: "flex",
+//     gap: "10px",
+//     justifyContent: "center", // Centrer sur mobile
+//   },
+//   "@media (min-width: 768px)": {
+//     profileImage: {
+//       width: "250px",
+//       height: "250px",
+//     },
+//     buttons: {
+//       justifyContent: "flex-start",
+//     },
+//   },
+// };
+
+
+// export default Home;
