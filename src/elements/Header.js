@@ -22,7 +22,7 @@ return(
                     <FontAwesomeIcon className="ms-2 text-white" icon={faEnvelope} /><a className="ms-2 text-white" href="mailto:nyavoandriatsilavo@gmail.com">
                     
                         nyavoandriatsilavo@gmail.com</a>
-                        <FontAwesomeIcon  className="ms-2 text-white" icon={faPhone} /><span className="ms-2 text-white">+261 34 57 497 76</span>
+                        
                 </div>
                 <div className="social-links d-none d-md-flex align-items-center">
                     
